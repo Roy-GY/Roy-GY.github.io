@@ -4,19 +4,19 @@
   <meta charset="utf-8">
   
   
-  <title>Home | 吴承儒的个人页面</title>
+  <title>Home | </title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta property="og:type" content="website">
 <meta property="og:title" content="Home">
 <meta property="og:url" content="http://example.com/index.html">
-<meta property="og:site_name" content="吴承儒的个人页面">
-<meta property="og:locale" content="en_US">
+<meta property="og:site_name">
+<meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2026-01-09T04:25:14.306Z">
 <meta property="article:modified_time" content="2026-01-09T04:25:14.306Z">
 <meta property="article:author" content="吴承儒">
 <meta name="twitter:card" content="summary">
   
-    <link rel="alternate" href="/atom.xml" title="吴承儒的个人页面" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="null" type="application/atom+xml">
   
   
     <link rel="shortcut icon" href="/favicon.png">
@@ -43,7 +43,7 @@
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner">
       <h1 id="logo-wrap">
-        <a href="/" id="logo">吴承儒的个人页面</a>
+        <a href="/" id="logo"></a>
       </h1>
       
     </div>
@@ -59,10 +59,10 @@
         
           <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
         
-        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+        <a class="nav-icon nav-search-btn" title="Suche"><span class="fa fa-search"></span></a>
       </nav>
       <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Suche"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
       </div>
     </div>
   </div>
@@ -72,31 +72,156 @@
         <section id="main"><!-- Personal Profile Section -->
 <div id="profile-intro" class="profile-intro-container outer">
   <div class="profile-intro-inner inner">
-    <div class="profile-card">
+    
+    <style>
+      /* 强制外层容器占满宽度并居中内容 */
+      .profile-intro-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+
+      /* 控制内容区域的最大宽度 */
+      .profile-intro-inner {
+        width: 100%;       /* 在小屏幕下占满 */
+        max-width: 1100px;  /*在大屏幕下的最大宽度 */
+        margin: 0 auto;    /* 自身居中 */
+      }
+
+      /* 通用卡片样式 */
+      .profile-box {
+        background: #fff;
+        padding: 30px;
+        margin-bottom: 20px; /* 两个框之间的间距 */
+        border-radius: 8px; /* 圆角 */
+        box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* 阴影 */
+      }
+
+      /* 头部框：头像 + 资料 */
+      .profile-header-box {
+        display: flex;
+        align-items: center; /* 垂直居中 */
+        justify-content: center; /* 水平居中 */
+        gap: 40px; /* 头像和文字的间距 */
+      }
+      .profile-img img {
+        width: 150px; /* 头像大小 */
+        height: 150px;
+        border-radius: 50%; /* 圆形头像 */
+        object-fit: cover;
+        border: 3px solid #eee;
+      }
+      .profile-name {
+        margin-top: 0;
+        margin-bottom: 15px;
+        font-size: 2em;
+        color: #333;
+      }
+      .profile-info p {
+        margin: 5px 0;
+        color: #555;
+      }
+
+      /* 响应式：手机端垂直排列 */
+      @media (max-width: 768px) {
+        .profile-header-box {
+          flex-direction: column;
+          text-align: center;
+          gap: 20px;
+        }
+      }
+
+      /* 内容框：奖项 + 论文 */
+      .profile-content-box h3 {
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+        margin-top: 30px; /* 板块间距 */
+        font-size: 1.4em;
+        color: #333;
+      }
+      /* 第一个标题取消顶部间距 */
+      .profile-content-box h3:first-child {
+        margin-top: 0;
+      }
+
+      /* 统一列表项样式 */
+      .profile-awards li, .profile-pubs li {
+        font-size: 15px;
+        line-height: 1.6;
+        color: #333;
+      }
+
+      /* 获奖情况样式 */
+      .profile-awards ul {
+        list-style-type: disc;
+        padding-left: 20px;
+        margin-top: 10px;
+      }
+      .profile-awards li {
+        margin-bottom: 5px;
+      }
+
+      /* 发表论文样式 */
+      .profile-pubs ul {
+        list-style: none;
+        padding-left: 0;
+      }
+      .profile-pubs li {
+        display: flex;
+        margin-bottom: 10px;
+        align-items: baseline;
+      }
+      .pub-meta {
+        min-width: 160px;
+        font-weight: bold;
+        flex-shrink: 0;
+        color: #555;
+      }
+    </style>
+
+    <!-- 第一个框：个人资料（移除卡片背景样式） -->
+    <div class="profile-header-box" style="margin-bottom: 20px;">
       <div class="profile-img">
-        <!-- 确保您在 source/images/ 下有一张名为 me.png 的图片 -->
         <img src="/images/me.png" alt="Profile Picture">
       </div>
-      <div class="profile-text">
+      <div class="profile-text-info">
         <h2 class="profile-name">吴承儒</h2>
         <div class="profile-info">
           <p><strong>🏫 学校:</strong> 北京航空航天大学</p>
           <p><strong>🎓 专业:</strong> 计算机科学与技术</p>
-        </div>
-        <div class="profile-bio">
-          <p>这里是简短的个人介绍。欢迎来到我的博客！</p>
-        </div>
-        <div class="profile-pubs">
-          <h3>📄 发表论文</h3>
-          <ul>
-            <li>[2025] On the Applicability of Code Language Models to Scientific Computing Programs</li>
-            <li>[2025] CCUP: A Controllable Synthetic Data Generation Pipeline for Pretraining Cloth-Changing Person Re-Identification Models</li>
-            <li>[2025] AdaptiveLLM: A Framework for Selecting Optimal Cost-Efficient LLM for Code-Generation Based on CoT Length</li>
-            <li>[2025] Towards Realistic Project-Level Code Generation via Multi-Agent Collaboration and Semantic Architecture Modeling</li>
-          </ul>
+          <p><strong>📧 邮箱:</strong> chengru_wu@buaa.edu.cn</a></p>
+          <p><strong>🏐 爱好:</strong> 排球、游戏</p>
         </div>
       </div>
     </div>
+
+    <!-- 第二个框：学术成果 -->
+    <div class="profile-box profile-content-box">
+      <div class="profile-awards">
+        <h3>🏆 获奖情况</h3>
+        <ul>
+          <li>2025年国家奖学金</li>
+          <li>2024年国家奖学金</li>
+          <li>2025年北京航空航天大学学习优秀奖学金特等奖</li>
+          <li>2024年北京航空航天大学学习优秀奖学金特等奖</li>
+          <li>2025年北京航空航天大学三好学生</li>
+          <li>2025年美国大学生数学建模竞赛M奖</li>
+          <li>2024年美国大学生数学建模竞赛H奖</li>
+        </ul>
+      </div>
+
+      <div class="profile-pubs">
+        <h3>📄 发表论文</h3>
+        <ul>
+          <li><span class="pub-meta">[2025 TSE]</span> <a href="https://ieeexplore.ieee.org/document/10977820" target="_blank">On the Applicability of Code Language Models to Scientific Computing Programs</a></li>
+          <li><span class="pub-meta">[2025 ICME]</span> <a href="https://ieeexplore.ieee.org/document/11209188" target="_blank">CCUP: A Controllable Synthetic Data Generation Pipeline for Pretraining Cloth-Changing Person Re-Identification Models</a></li>
+          <li><span class="pub-meta">[2025 Internetware]</span> <a href="https://arxiv.org/abs/2506.10525" target="_blank">AdaptiveLLM: A Framework for Selecting Optimal Cost-Efficient LLM for Code-Generation Based on CoT Length</a></li>
+          <li><span class="pub-meta">[2025]</span> <a href="https://arxiv.org/abs/2511.03404" target="_blank">Towards Realistic Project-Level Code Generation via Multi-Agent Collaboration and Semantic Architecture Modeling</a></li>
+        </ul>
+      </div>
+    </div>
+
   </div>
 </div>
 
