@@ -1,0 +1,219 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Chengru Wu</title>
+
+    <meta name="author" content="Chengru Wu">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+  </head>
+
+  <body>
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr style="padding:0px">
+              <td style="padding:2.5%;width:63%;vertical-align:middle">
+                <p class="name" style="text-align: center;">
+                  Chengru Wu
+                </p>
+                <p>
+                  I'm an undergraduate student at <a href="https://www.buaa.edu.cn/">Beihang University</a> (北京航空航天大学), majoring in Computer Science and Technology.
+                  My research interests include code language models, multi-agent systems for code generation, and embodied intelligence.
+                </p>
+                <p style="text-align:center">
+                  <a href="mailto:chengru_wu@buaa.edu.cn">Email</a> &nbsp;/&nbsp;
+                  <a href="data/ChengruWu-CV.pdf">CV</a> &nbsp;/&nbsp;
+                  <a href="https://github.com/Roy-GY">Github</a>
+                </p>
+              </td>
+              <td style="padding:2.5%;width:37%;max-width:37%">
+                <a href="images/me.png"><img style="width:100%;max-width:180px;aspect-ratio:1/1;object-fit:cover;border-radius:50%;" alt="profile photo" src="images/me.png" class="hoverZoomLink"></a>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+              <td style="padding:16px;width:100%;vertical-align:middle">
+                <h2>Research</h2>
+                <p>
+                  I'm interested in code language models, multi-agent systems for code generation, and embodied intelligence. Representative papers are listed below.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+            <tr>
+              <td style="padding:16px;width:30%;vertical-align:middle">
+                <img src='images/projectgen_architecture.png' width="100%" style="border-radius:4px;" alt="ProjectGen architecture">
+              </td>
+              <td style="padding:8px;width:70%;vertical-align:middle">
+                <a href="https://arxiv.org/abs/2511.03404">
+                  <span class="papertitle">Towards Realistic Project-Level Code Generation via Multi-Agent Collaboration and Semantic Architecture Modeling</span>
+                </a>
+                <br>
+                Qianhui Zhao, Li Zhang, Fang Liu, Junhang Cheng, <strong>Chengru Wu</strong>, Junchen Ai, Qiaoyuanhe Meng, Lichen Zhang, Xiaoli Lian, Shubin Song, Yuanping Guo
+                <br>
+                <em>ACM Transactions on Software Engineering and Methodology (TOSEM)</em>, 2026
+                <br>
+                <a href="https://arxiv.org/abs/2511.03404">arXiv</a>
+                <p></p>
+                <p>
+                  Tackles project-level code generation by introducing CodeProjectEval (a dataset of 18 real-world repositories averaging 12.7 files and ~2,389 lines per task) and ProjectGen, a multi-agent framework that decomposes generation into architecture design, skeleton generation, and code filling. Introduces Semantic Software Architecture Tree (SSAT) to bridge user requirements and code. Achieves 57% improvement on DevBench and ~10x improvement on CodeProjectEval over baselines.
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding:16px;width:30%;vertical-align:middle">
+                <img src='images/cangjiebench_methods.png' width="100%" style="border-radius:4px;" alt="CangjieBench methods">
+              </td>
+              <td style="padding:8px;width:70%;vertical-align:middle">
+                <a href="https://arxiv.org/abs/2603.14501">
+                  <span class="papertitle">CangjieBench: Benchmarking LLMs on a Low-Resource General-Purpose Programming Language</span>
+                </a>
+                <br>
+                Junhang Cheng, Fang Liu, Jia Li, <strong>Chengru Wu</strong>, Nanxiang Jiang, Li Zhang
+                <br>
+                <em>arXiv</em>, 2026
+                <br>
+                <a href="https://arxiv.org/abs/2603.14501">arXiv</a>
+                /
+                <a href="https://github.com/cjhCoder7/CangjieBench">code</a>
+                <p></p>
+                <p>
+                  Introduces CangjieBench, a contamination-free benchmark of 248 manually translated samples from HumanEval and ClassEval for Cangjie, a low-resource general-purpose language by Huawei. Evaluates LLMs under Direct Generation, Syntax-Constrained Generation, RAG, and Agent settings. Finds that Syntax-Constrained Generation offers the best accuracy-cost trade-off, while Agents achieve SOTA accuracy at high token cost. Reveals negative transfer in Code-to-Code translation where models overfit to source language patterns.
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding:16px;width:30%;vertical-align:middle">
+                <img src='images/scientific_computing_program.png' width="100%" style="border-radius:4px;" alt="TSE paper">
+              </td>
+              <td style="padding:8px;width:70%;vertical-align:middle">
+                <a href="https://ieeexplore.ieee.org/document/10977820">
+                  <span class="papertitle">On the Applicability of Code Language Models to Scientific Computing Programs</span>
+                </a>
+                <br>
+                Qianhui Zhao, Fang Liu, Xiao Long, <strong>Chengru Wu</strong>, Li Zhang
+                <br>
+                <em>IEEE Transactions on Software Engineering (TSE)</em>, 2025
+                <br>
+                <a href="https://ieeexplore.ieee.org/document/10977820">IEEE</a>
+                <p></p>
+                <p>
+                  Evaluates whether pre-trained code language models (CodeBERT, CodeT5, Codex, StarCoder, CodeLlama) can generalize to scientific computing programming languages (SCPLs). Finds that while SCPLs are more challenging than general-purpose languages, CLMs are nevertheless applicable and knowledge from general languages transfers effectively to SCPL analysis.
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding:16px;width:30%;vertical-align:middle">
+                <img src='images/ccup_pipeline.png' width="100%" style="border-radius:4px;" alt="CCUP pipeline">
+              </td>
+              <td style="padding:8px;width:70%;vertical-align:middle">
+                <a href="https://ieeexplore.ieee.org/document/11209188">
+                  <span class="papertitle">CCUP: A Controllable Synthetic Data Generation Pipeline for Pretraining Cloth-Changing Person Re-Identification Models</span>
+                </a>
+                <br>
+                Yujian Zhao, <strong>Chengru Wu</strong>, Yinong Xu, Xuanzheng Du, Ruiyu Li, Guanglin Niu
+                <br>
+                <em>IEEE International Conference on Multimedia and Expo (ICME)</em>, 2025
+                <br>
+                <a href="https://ieeexplore.ieee.org/document/11209188">IEEE</a>
+                /
+                <a href="https://arxiv.org/abs/2410.13567">arXiv</a>
+                /
+                <a href="https://github.com/yjzhao1019/CCUP">code</a>
+                <p></p>
+                <p>
+                  Proposes a low-cost pipeline for generating controllable synthetic data for cloth-changing person re-identification. Introduces the CCUP dataset with 6,000 IDs, ~1.18M images, 100 cameras, and 26.5 outfits per individual. A pretrain-finetune framework using CCUP significantly improves CC-ReID models, outperforming state-of-the-art methods on PRCC, VC-Clothes, and NKUP benchmarks.
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding:16px;width:30%;vertical-align:middle">
+                <img src='images/adaptivellm_overview.png' width="100%" style="border-radius:4px;" alt="AdaptiveLLM overview">
+              </td>
+              <td style="padding:8px;width:70%;vertical-align:middle">
+                <a href="https://arxiv.org/abs/2506.10525">
+                  <span class="papertitle">AdaptiveLLM: A Framework for Selecting Optimal Cost-Efficient LLM for Code-Generation Based on CoT Length</span>
+                </a>
+                <br>
+                Junhang Cheng, Fang Liu, <strong>Chengru Wu</strong>, Li Zhang
+                <br>
+                <em>Internetware</em>, 2025
+                <br>
+                <a href="https://arxiv.org/abs/2506.10525">arXiv</a>
+                /
+                <a href="https://github.com/cjhCoder7/AdaptiveLLM">code</a>
+                <p></p>
+                <p>
+                  Introduces AdaptiveLLM, a framework that dynamically selects the optimal cost-efficient LLM for code generation based on automatically assessed task difficulty using Chain-of-Thought length. Clusters tasks into three difficulty levels and uses XGBoost for model selection. Achieves 7.86% improvement in pass@1 while reducing resource consumption by 88.9% compared to ComplexityNet.
+                </p>
+              </td>
+            </tr>
+
+          </tbody></table>
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:16px;width:100%;vertical-align:middle">
+                <h2>Honors &amp; Awards</h2>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:8px 16px;width:100%;vertical-align:middle">
+                <ul style="margin:0;padding-left:20px;">
+                  <li>National Scholarship, 2025</li>
+                  <li>National Scholarship, 2024</li>
+                  <li>Beihang University Academic Excellence Scholarship (Special Prize), 2025</li>
+                  <li>Beihang University Academic Excellence Scholarship (Special Prize), 2024</li>
+                  <li>Beihang University Merit Student, 2025</li>
+                  <li>Mathematical Contest in Modeling (MCM) — Meritorious Winner (M Award), 2025</li>
+                  <li>Mathematical Contest in Modeling (MCM) — Honorable Mention (H Award), 2024</li>
+                </ul>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <table style="width:100%; margin:0 auto; border:0; border-spacing:0; padding:16px;"><tbody>
+            <tr>
+              <td>
+                <h2>Miscellanea</h2>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:8px 16px;width:100%;vertical-align:middle">
+                <ul>
+                  <li>Hobbies: Volleyball, Gaming</li>
+                </ul>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:0px">
+                <br>
+                <p style="text-align:right;font-size:small;">
+                  Template adapted from <a href="https://github.com/jonbarron/jonbarron.github.io">Jon Barron's website</a>.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
